@@ -1,0 +1,54 @@
+name: 回帖
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0,5,10,15,20,25,30,35,40,45,50,55 * * * *'
+  watch:
+    types: [started]
+   
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    - name: Set up Python #安装python
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.8
+    - name: Install requirements #安装模块
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    - name: start
+      run: |
+        python ch.py
+        #python 日常/ss.py
+        #python 日常/ss1.py
+        #python 日常/ss2.py
+        #python 日常/dg.py
+        #python 日常/ssft.py
+        #python 日常/fygh.py
+        #python 日常/ss.py
+
+      env: 
+        COOKIEFY: ${{ secrets.COOKIEFY }}
+        COOKIETS: ${{ secrets.COOKIETS }}
+        COOKIESS: ${{ secrets.COOKIESS }}
+        COOKIESS1: ${{ secrets.COOKIESS1 }}
+        COOKIEHS: ${{ secrets.COOKIEHS }}
+        COOKIECH: ${{ secrets.COOKIECH }}
+        FORMHASHCH: ${{ secrets.FORMHASHCH }}
+        HASHHS: ${{ secrets.HASHHS }}
+    - name: Commit #上传新的refresh_token到仓库
+      run: |
+        git config --global user.email actionbot@email.com
+        git config --global user.name actionbot
+        git add .
+        git commit -m "更新输出日志" -a
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        force: true
