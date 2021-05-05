@@ -9,7 +9,7 @@ import sys
 
 
 
-path=sys.path[0]+r'/村花.txt'
+path=sys.path[0]+r'/日志/ch.txt'
 cookie =  os.environ["COOKIECH"]
 formhash =  os.environ["FORMHASHCH"]
 urlz=os.environ["CHURL"]
