@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root><![CDATA[<div class="tip">
 <dt id="messagetext">
-<p style="padding: .05rem 0;">抱歉，您尚未输入标题或内容<script type="text/javascript" reload="1">if(typeof errorhandle_fastpost=='function') {errorhandle_fastpost('抱歉，您尚未输入标题或内容', {});}</script></p>
+<p style="padding: .05rem 0;">抱歉，该内容疑似灌水，需审核后才能发布。<script type="text/javascript" reload="1">if(typeof errorhandle_fastpost=='function') {errorhandle_fastpost('抱歉，该内容疑似灌水，需审核后才能发布。', {});}</script></p>
         <p><input type="button" class="button" onclick="popup.close();" value="关闭"></p>
 </dt>
 </div>
