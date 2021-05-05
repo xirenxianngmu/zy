@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root><![CDATA[<div class="tip">
 <dt id="messagetext">
-<p style="padding: .05rem 0;">抱歉，您尚未输入标题或内容<script type="text/javascript" reload="1">if(typeof errorhandle_fastpost=='function') {errorhandle_fastpost('抱歉，您尚未输入标题或内容', {});}</script></p>
-        <p><input type="button" class="button" onclick="popup.close();" value="关闭"></p>
-</dt>
+<p style="padding: .05rem 0;">非常感谢，回复发布成功，现在将转入主题页，请稍候……<br /><a href="forum-41-1.html">[ 点击这里转入主题列表 ]</a><script type="text/javascript" reload="1">if(typeof succeedhandle_fastpost=='function') {succeedhandle_fastpost('forum.php?mod=viewthread&tid=229356&pid=13746565&page=11&extra=&mobile=2#pid13746565', '非常感谢，回复发布成功，现在将转入主题页，请稍候……[ 点击这里转入主题列表 ]', {'fid':'41','tid':'229356','pid':'13746565','from':'','sechash':''});}</script></p>
+        </dt>
 </div>
 ]]></root>
