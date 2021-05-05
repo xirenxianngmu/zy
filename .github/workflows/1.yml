@@ -41,6 +41,7 @@ jobs:
         COOKIECH: ${{ secrets.COOKIECH }}
         FORMHASHCH: ${{ secrets.FORMHASHCH }}
         HASHHS: ${{ secrets.HASHHS }}
+        CHURL : ${{ secrets.CHURL }}
     - name: Commit #上传新的refresh_token到仓库
       run: |
         git config --global user.email actionbot@email.com
