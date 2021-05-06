@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root><![CDATA[<div class="tip">
 <dt id="messagetext">
-<p style="padding: .05rem 0;">抱歉，该内容疑似灌水，需审核后才能发布。<script type="text/javascript" reload="1">if(typeof errorhandle_fastpost=='function') {errorhandle_fastpost('抱歉，该内容疑似灌水，需审核后才能发布。', {});}</script></p>
+<p style="padding: .05rem 0;">抱歉，您的帖子小于 12 个字符的限制<script type="text/javascript" reload="1">if(typeof errorhandle_fastpost=='function') {errorhandle_fastpost('抱歉，您的帖子小于 12 个字符的限制', {'minpostsize':'12','maxpostsize':'10000'});}</script></p>
         <p><input type="button" class="button" onclick="popup.close();" value="关闭"></p>
 </dt>
 </div>
