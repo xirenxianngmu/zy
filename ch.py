@@ -32,13 +32,11 @@ def q():
     #去重
     d=list(set(d))
     g = str(random.choice(d))
-    print(g)
     url1 = str(urlz)+"/forum.php?mod=viewthread&tid=" + str(g)
     res2 = requests.get(url=url1, headers=headers).text
     zzz = r'postmessage_.+?>(.+?)<'
     q = re.findall(zzz, res2, re.S)
     s = str(q[-2]).strip()
-    print(s)
     url2 = (
         str(urlz)+"/forum.php?mod=post&action=reply&fid=" +
         str(id) + "&tid=" + str(g) +
@@ -56,7 +54,10 @@ def q():
         "message": str(s),
     }
     res1 = requests.post(url=url2, headers=headers1, data=data1).text
-    print(res1)
+    if "成功" in res1:
+       print("回复成功")
+    else:
+       print("回复失败")
     with open(path, 'w+') as f:
         f.write(res1)
 
