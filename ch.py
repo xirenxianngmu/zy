@@ -9,7 +9,7 @@ import sys
 
 
 
-path=sys.path[0]+r'/日志/ch.txt'
+path=sys.path[0]+r'README.md'
 cookie =  os.environ["COOKIECH"]
 formhash =  os.environ["FORMHASHCH"]
 urlz=os.environ["CHURL"]
@@ -56,9 +56,9 @@ def q():
     res1 = requests.post(url=url2, headers=headers1, data=data1).text
     print(res1)
     if "成功" in res1:
-       z=str("回复成功")
+       z=str("<font color=black size=12 face="黑体"><center>回复成功，摸鱼去吧</center></font>")
     else:
-       z=str("回复失败")
+       z=str("<font color=red size=12 face="黑体"><center>ERROR,快去改代码</center></font>")
     with open(path, 'w+') as f:
         f.write(z)
 
