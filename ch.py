@@ -58,7 +58,7 @@ def q():
     if "成功" in res1:
        z='<center><font color=black size=12 face="黑体">成功了，摸鱼去吧</font></center>'
     else:
-       z='<center><font color=red size=12 face="黑体">**ERROR,快去改代码** </font></center>'
+       z='<center><font color="#660000" size=12 face="黑体">**ERROR,快去改代码** </font></center>'
     with open(path, 'w+') as f:
         f.write(z)
 
