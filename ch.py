@@ -57,11 +57,11 @@ def q():
     res1 = requests.post(url=url2, headers=headers1, data=data1).text
     print(res1)
     if "成功" in res1:
-       z=str(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))+':'+'成功了，摸鱼去吧'
+       z=str(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))+':'+'成功了，摸鱼去吧\r\n'
     elif "抱歉" in res1:
-       z=str(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))+':'+'估摸着又发了些沙雕东西'
+       z=str(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))+':'+'估摸着又发了些沙雕东西\r\n'
     else:
-       z=str(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))+':'+'ERROR,快去改代码'
+       z=str(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))+':'+'ERROR,快去改代码\r\n'
     with open(path, 'w+') as f:
         f.write(z)
     with open(path1, 'a+') as f:
