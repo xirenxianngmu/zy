@@ -10,6 +10,7 @@ import sys
 
 
 path=sys.path[0]+r'/README.md'
+path1=sys.path[0]+r'/历史/memory.txt'
 cookie =  os.environ["COOKIECH"]
 formhash =  os.environ["FORMHASHCH"]
 urlz=os.environ["CHURL"]
@@ -62,6 +63,8 @@ def q():
     else:
        z=str(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))+': '+'<font color=red size=12 face="黑体"><center>ERROR,快去改代码</center></font>'
     with open(path, 'w+') as f:
+        f.write(z)
+    with open(path1, 'r+') as f:
         f.write(z)
 
 
