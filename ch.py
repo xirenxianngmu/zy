@@ -36,7 +36,7 @@ def q():
     res2 = requests.get(url=url1, headers=headers).text
     zzz = r'postmessage_.+?>(.+?)<'
     q = re.findall(zzz, res2, re.S)
-    s = str(q[-2]).strip()
+    s = str(random.choice(q)).strip()
     url2 = (
         str(urlz)+"/forum.php?mod=post&action=reply&fid=" +
         str(id) + "&tid=" + str(g) +
