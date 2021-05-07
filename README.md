@@ -1,1 +1,1 @@
-<font color=red size=12 face="黑体"><center>ERROR,快去改代码</center></font>
+<font color=black size=12 face="黑体"><center>回复成功，摸鱼去吧</center></font>
