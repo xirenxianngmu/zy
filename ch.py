@@ -54,12 +54,13 @@ def q():
         "message": str(s),
     }
     res1 = requests.post(url=url2, headers=headers1, data=data1).text
+    print(res1)
     if "成功" in res1:
-       print("回复成功")
+       z=str("回复成功")
     else:
-       print("回复失败")
+       z=str("回复失败")
     with open(path, 'w+') as f:
-        f.write(res1)
+        f.write(z)
 
 
 def main_handler(event, context):
