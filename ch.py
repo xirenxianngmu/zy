@@ -64,7 +64,7 @@ def q():
        z=str(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))+':'+'<font color=red size=12 face="黑体"><center>ERROR,快去改代码</center></font>'
     with open(path, 'w+') as f:
         f.write(z)
-    with open(path1, 'r+') as f:
+    with open(path1, 'a+') as f:
         f.write(z)
 
 
