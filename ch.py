@@ -58,7 +58,7 @@ def q():
     if "成功" in res1:
        z='<font color=black size=12 face="黑体"><center>成功了，摸鱼去吧</center></font>'
     elif "抱歉" in res1:
-       z="<center><font color=black size=12 face="黑体">估摸着又发了些沙雕东西</font></center>"
+       z='<center><font color=black size=12 face="黑体">估摸着又发了些沙雕东西</font></center>'
     else:
        z='<font color=red size=12 face="黑体"><center>ERROR,快去改代码</center></font>'
     with open(path, 'w+') as f:
