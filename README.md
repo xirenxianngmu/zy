@@ -1,1 +1,1 @@
-<font color=black size=12 face="黑体"><center>回复成功，摸鱼去吧</center></font>
+<center><font color=black size=12 face="黑体">成功了，摸鱼去吧</font></center>
