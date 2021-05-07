@@ -56,9 +56,9 @@ def q():
     res1 = requests.post(url=url2, headers=headers1, data=data1).text
     print(res1)
     if "成功" in res1:
-       z=str('<font color=black size=12 face="黑体"><center>回复成功，摸鱼去吧</center></font>')
+       z='<font color=black size=12 face="黑体"><center>回复成功，摸鱼去吧</center></font>'
     else:
-       z=str('<font color=red size=12 face="黑体"><center>ERROR,快去改代码</center></font>')
+       z='<font color=red size=12 face="黑体"><center>ERROR,快去改代码</center></font>'
     with open(path, 'w+') as f:
         f.write(z)
 
