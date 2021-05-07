@@ -9,7 +9,7 @@ import sys
 
 
 
-path=sys.path[0]+r'README.md'
+path=sys.path[0]+r'/README.md'
 cookie =  os.environ["COOKIECH"]
 formhash =  os.environ["FORMHASHCH"]
 urlz=os.environ["CHURL"]
