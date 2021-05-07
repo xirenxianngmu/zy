@@ -57,11 +57,11 @@ def q():
     res1 = requests.post(url=url2, headers=headers1, data=data1).text
     print(res1)
     if "成功" in res1:
-       z=str(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))+':'+'<font color=black size=12 face="黑体"><center>成功了，摸鱼去吧</center></font>'
+       z=str(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))+':'+'<font color=black size=10 face="黑体"><center>成功了，摸鱼去吧</center></font>'
     elif "抱歉" in res1:
-       z=str(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))+':'+'<center><font color=black size=12 face="黑体">估摸着又发了些沙雕东西</font></center>'
+       z=str(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))+':'+'<center><font color=black size=10 face="黑体">估摸着又发了些沙雕东西</font></center>'
     else:
-       z=str(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))+':'+'<font color=red size=12 face="黑体"><center>ERROR,快去改代码</center></font>'
+       z=str(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))+':'+'<font color=red size=10 face="黑体"><center>ERROR,快去改代码</center></font>'
     with open(path, 'w+') as f:
         f.write(z)
     with open(path1, 'a+') as f:
