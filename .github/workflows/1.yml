@@ -6,6 +6,8 @@ on:
     - cron: '*/6 * * * *'
   watch:
     types: [started]
+env:
+  TZ: Asia/Shanghai
    
 jobs:
   build:
