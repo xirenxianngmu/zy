@@ -56,7 +56,7 @@ def q():
     res1 = requests.post(url=url2, headers=headers1, data=data1).text
     print(res1)
     if "成功" in res1:
-       z='<font color=black size=12 face="黑体"><center>回复成功，摸鱼去吧</center></font>'
+       z='<font color=black size=12 face="黑体"><center>成功了，摸鱼去吧</center></font>'
     elif "抱歉" in res1:
        z="估摸着又发了些沙雕东西"
     else:
