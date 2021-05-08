@@ -10,7 +10,7 @@ import sys
 
 
 path=sys.path[0]+r'/README.md'
-path1=sys.path[0]+r'/历史/memory.md'
+path1=sys.path[0]+r'/历史/memory.txt'
 cookie =  os.environ["COOKIECH"]
 formhash =  os.environ["FORMHASHCH"]
 urlz=os.environ["CHURL"]
