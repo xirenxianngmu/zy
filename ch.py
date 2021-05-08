@@ -15,6 +15,8 @@ cookie =  os.environ["COOKIECH"]
 formhash =  os.environ["FORMHASHCH"]
 urlz=os.environ["CHURL"]
 def q():
+    url0 = str(urlz)+"/k_misign-sign.html?operation=qiandao&format=global_usernav_extra&formhash="+str(formhash)+"&inajax=1&ajaxtarget=k_misign_topb"
+    requests.get(url=url0, headers=headers)
     i = ["40", "38", "39", "41", "42", "46", "47", "48", "101"]
     id = random.choice(i)
     url = str(urlz)+"/forum-" + str(id) + "-" + str(
