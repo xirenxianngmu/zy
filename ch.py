@@ -15,8 +15,6 @@ cookie =  os.environ["COOKIECH"]
 formhash =  os.environ["FORMHASHCH"]
 urlz=os.environ["CHURL"]
 def q():
-    url0 = str(urlz)+"/k_misign-sign.html?operation=qiandao&format=global_usernav_extra&formhash="+str(formhash)+"&inajax=1&ajaxtarget=k_misign_topb"
-    requests.get(url=url0, headers=headers)
     i = ["40", "38", "39", "41", "42", "46", "47", "48", "101"]
     id = random.choice(i)
     url = str(urlz)+"/forum-" + str(id) + "-" + str(
@@ -26,6 +24,8 @@ def q():
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36",
         "cookie":cookie
     }
+    url0 = str(urlz)+"/k_misign-sign.html?operation=qiandao&format=global_usernav_extra&formhash="+str(formhash)+"&inajax=1&ajaxtarget=k_misign_topb"
+    requests.get(url=url0, headers=headers)
     res = requests.get(url=url, headers=headers).text
     c = str(res)
     zz = r'thread-(......)-1-1'
