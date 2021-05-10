@@ -64,7 +64,7 @@ def q():
         f.write(z)
     with open(path1, 'a+') as f:
         f.write(z)
-    time.sleep(str(jg))
+    time.sleep(jg)
 
 
 for i in range (cs):
