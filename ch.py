@@ -5,10 +5,8 @@ import os
 import requests
 import sys
 
-
-
-
-
+jg=random.randint(60,90)
+cs=random.randint(1,4)
 path=sys.path[0]+r'/README.md'
 path1=sys.path[0]+r'/历史/memory.txt'
 cookie =  os.environ["COOKIECH"]
@@ -66,11 +64,8 @@ def q():
         f.write(z)
     with open(path1, 'a+') as f:
         f.write(z)
+    time.sleep(str(jg))
 
 
-def main_handler(event, context):
-    return q()
-
-
-if __name__ == "__main__":
+for i in range (cs):
     q()
