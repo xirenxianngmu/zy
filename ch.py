@@ -67,5 +67,5 @@ def q():
     time.sleep(jg)
 
 
-for i in range (cs):
+for i in range (3):
     q()
